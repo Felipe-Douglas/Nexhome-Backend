@@ -1,0 +1,91 @@
+1. Cadastro e Gerenciamento de Imóveis
+
+	Property Routes
+
+		GET /api/properties: Obter a lista de todos os imóveis.
+		GET /api/properties/{id}: Obter detalhes de um imóvel específico.
+		POST /api/properties: Adicionar um novo imóvel.
+		PUT /api/properties/{id}: Atualizar informações de um imóvel.
+		DELETE /api/properties/{id}: Excluir um imóvel.
+		GET /api/properties/filter: Filtrar imóveis por localização, preço, tipo, etc.
+
+2. Gerenciamento de Clientes
+
+	Client Routes
+
+		GET /api/clients: Obter a lista de todos os clientes.
+		GET /api/clients/{id}: Obter detalhes de um cliente específico.
+		POST /api/clients: Adicionar um novo cliente.
+		PUT /api/clients/{id}: Atualizar informações de um cliente.
+		DELETE /api/clients/{id}: Excluir um cliente.
+		GET /api/clients/search: Pesquisar clientes por critérios específicos.
+
+3. Contratos e Transações
+
+	Contract Routes
+
+		GET /api/contracts: Obter a lista de todos os contratos.
+		GET /api/contracts/{id}: Obter detalhes de um contrato específico.
+		POST /api/contracts: Criar um novo contrato.
+		PUT /api/contracts/{id}: Atualizar um contrato existente.
+		DELETE /api/contracts/{id}: Excluir um contrato.
+		POST /api/contracts/{id}/renew: Renovar um contrato.
+		POST /api/contracts/{id}/terminate: Terminar um contrato.
+		POST /api/contracts/{id}/cancel: Cancelar um contrato.
+
+	Transaction Routes
+
+		GET /api/transactions: Obter a lista de todas as transações.
+		GET /api/transactions/{id}: Obter detalhes de uma transação específica.
+		POST /api/transactions: Registrar um novo pagamento ou transação.
+		GET /api/transactions/history: Obter histórico de transações.
+		GET /api/transactions/pending: Obter lista de pagamentos pendentes.
+
+4. Gerenciamento de Agendamentos e Visitas
+
+	Appointment Routes
+
+		GET /api/appointments: Obter a lista de todos os agendamentos.
+		GET /api/appointments/{id}: Obter detalhes de um agendamento específico.
+		POST /api/appointments: Agendar uma nova visita.
+		PUT /api/appointments/{id}: Atualizar um agendamento existente.
+		DELETE /api/appointments/{id}: Cancelar um agendamento.
+		GET /api/appointments/calendar: Obter o calendário de agendamentos.
+
+	Feedback Routes
+
+		POST /api/appointments/{id}/feedback: Registrar feedback de uma visita.
+		GET /api/appointments/{id}/feedback: Obter feedback de uma visita específica.
+
+5. Integração com Portais Imobiliários
+
+	Integration Routes
+
+		POST /api/integrations/publish: Publicar anúncios em portais imobiliários.
+		GET /api/integrations/sync: Sincronizar informações dos imóveis com portais imobiliários.
+
+6. Relatórios e Análises
+
+	Report Routes
+
+		GET /api/reports/performance: Gerar relatório de desempenho (vendas, aluguéis, imóveis disponíveis).
+		GET /api/reports/market: Análise de mercado e tendências (preços médios, demandas).
+
+7. Autenticação e Autorização
+
+	Auth Routes
+
+		POST /api/auth/login: Login de usuário.
+		POST /api/auth/register: Registro de novo usuário.
+		POST /api/auth/logout: Logout de usuário.
+		POST /api/auth/refresh: Renovar token de autenticação.
+
+8. Suporte ao Cliente
+
+	Support Routes
+
+		POST /api/support/tickets: Abrir um novo ticket de suporte.
+		GET /api/support/tickets: Obter a lista de todos os tickets.
+		GET /api/support/tickets/{id}: Obter detalhes de um ticket específico.
+		POST /api/support/tickets/{id}/close: Fechar um ticket.
+		POST /api/support/chat: Iniciar uma sessão de chat online para atendimento ao cliente.
